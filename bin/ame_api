@@ -4,5 +4,5 @@ $:.unshift(lib_path) unless $:.include?(lib_path) or !File.exists?(lib_path)
 
 require 'adobe_media_encoder/api/cli'
 
-#ARGV << '--help' if ARGV.empty?
+ARGV << '--help' if ARGV.empty?
 AdobeMediaEncoder::API::CLI.new
