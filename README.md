@@ -40,16 +40,30 @@ An executable to interact with the Adobe Media Encoder API using a Command Line 
                                       default: ~/.options/ame_api
     -h, --help                       Show this message.
 
-#### Available Methods
+#### Examples of Usage
 
     job_abort
+    ame_api --host-address localhost --host-port 8080 --method-name job_abort
+    ame_api --host-address localhost --host-port 8080 --method-name job_abort --method-arguments '{"jobId":""}'
+
     job_history
+    ame_api --host-address localhost --host-port 8080 --method-name job_history
+
     job_status
+    ame_api --host-address localhost --host-port 8080 --method-name job_status
+
     job_submit
+    ame_api --host-address localhost --host-port 8080 --method-name job_status --method-arguments '{"SourcePresetPath":"","SourceFilePath":"","DestinationPath":"","OverwriteDestinationIfPresent":"","NotificationTarget":"","BackupNotificationTarget":"","NotificationRateInMilliseconds":""}'
 
     server_kill
+    ame_api --host-address localhost --host-port 8080 --method-name server_kill
+
     server_restart
+    ame_api --host-address localhost --host-port 8080 --method-name server_restart
+
     server_status
+    ame_api --host-address localhost --host-port 8080 --method-name server_status
+
 
 ## Contributing
 
