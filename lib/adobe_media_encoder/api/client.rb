@@ -37,9 +37,9 @@ module AdobeMediaEncoder
 
         def self.create_manifest(data)
           <<-XML
-            <?xml version='1.0'?>
-            <manifest version='1.0'>#{ data.map { |k,v| _k = k.to_s.camel_case; "\n\t<#{_k}>#{v.to_s}</#{_k}>"}.join }
-            </manifest>
+<?xml version='1.0'?>
+<manifest version='1.0'>#{ data.map { |k,v| _k = k.to_s.camel_case; "\n\t<#{_k}>#{v.to_s}</#{_k}>"}.join }
+</manifest>
           XML
         end
 
