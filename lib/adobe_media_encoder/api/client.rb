@@ -158,7 +158,7 @@ module AdobeMediaEncoder
           send_request(request)
         end
 
-        def post(path, body, options = { })
+        def post(path, body = nil, options = { })
           query = options.fetch(:query, { })
           @uri = build_uri(path, query)
           #body = JSON.generate(body) unless body.is_a?(String)
