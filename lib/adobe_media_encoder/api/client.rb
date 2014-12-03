@@ -7,6 +7,7 @@ require 'adobe_media_encoder'
 class String
 
   def camel_case
+    return self if self !~ /_/ && self =~ /[A-Z]+.*/
     split('_').collect(&:capitalize).join
   end
   alias :camelize :camel_case
