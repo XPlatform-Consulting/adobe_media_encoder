@@ -81,7 +81,7 @@ module AdobeMediaEncoder
         end
 
         response = api.__send__(*send_arguments)
-        puts response
+        puts response.respond_to?(:body) ? response.body : response
 
         exit
       end
