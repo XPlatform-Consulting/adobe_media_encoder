@@ -26,10 +26,12 @@ module AdobeMediaEncoder
           :log_to => STDERR,
           :log_level => Logger::WARN,
           :options_file_path => File.expand_path(File.basename($0, '.*'), '~/.options'),
+          :host => AdobeMediaEncoder::API::Client::HTTPClient::DEFAULT_HTTP_HOST_ADDRESS,
+          :port => AdobeMediaEncoder::API::Client::HTTPClient::DEFAULT_HTTP_HOST_PORT,
         }
         op = OptionParser.new
         op.on('--host-address HOSTADDRESS', 'The AdobeAnywhere server address.',
-              "\tdefault: #{arguments[:host_address]}") { |v| arguments[:host] = v }
+              "\tdefault: #{arguments[:host]}") { |v| arguments[:host] = v }
         op.on('--host-port PORT', 'The port on the AdobeAnywhere server to connect to.',
               "\tdefault: #{arguments[:port]}") { |v| arguments[:port] = v }
         op.on('--method-name METHODNAME', '') { |v| arguments[:method_name] = v }
