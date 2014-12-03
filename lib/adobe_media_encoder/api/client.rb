@@ -195,10 +195,12 @@ module AdobeMediaEncoder
             symbolize_keys = options.fetch(:symbolize_keys, true)
             camelize_keys = options.fetch(:camelize_keys, false)
             uncapitalize_keys = options.fetch(:uncapitalize_keys, false)
+            downcase_keys = options.fetch(:downcase_keys, false)
             Hash[args.map do |k, v|
                    _k = k.dup rescue k
                    _k = _k.to_s.camel_case if camelize_keys rescue _k
                    _k = _k.to_s.uncapitalize if uncapitalize_keys rescue _k
+                   _k = _k.to_s.downcase if downcase_keys rescue _k
                    _k = symbolize_keys ? _k.to_sym : _k.to_s rescue _k
                    [_k, v ]
                  end]
@@ -208,8 +210,8 @@ module AdobeMediaEncoder
       end
 
       def job_abort(args = { })
-        args = normalize_args(args)
-        job_id = args[:id] || args[:job_id]
+        args = normalize_args(args, :symbolize_keys => true, :downcase_keys => true)
+        job_id = args[:id] || args[:job_id] || args[:jobid]
         http.delete("job#{job_id ? "?jobID=#{job_id}" : ''}")
       end
 
