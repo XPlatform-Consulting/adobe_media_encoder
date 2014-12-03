@@ -1,6 +1,6 @@
 # AdobeMediaEncoder
 
-TODO: Write a gem description
+    A library for interacting with the Adobe Media Encoder API
 
 ## Installation
 
@@ -18,9 +18,38 @@ Or install it yourself as:
 
     $ gem install adobe_media_encoder
 
-## Usage
+## Command Line Utilitie(s)
 
-TODO: Write usage instructions here
+### AME API CLI [bin/ame_api](./bin/ame_api)
+An executable to interact with the Adobe Media Encoder API using a Command Line Interface
+
+#### Usage
+        --host-address HOSTADDRESS   The AME API server address.
+                                      default: localhost
+        --host-port PORT             The port on the AME API server to connect to.
+                                      default: 8080
+        --method-name METHODNAME
+        --method-arguments JSON
+        --pretty-print
+        --log-to FILENAME            Log file location.
+                                      default: STDERR
+        --log-level LEVEL            Logging level. Available Options: debug, info, warn, error, fatal
+                                      default: warn
+        --[no-]options-file [FILENAME]
+                                     Path to a file which contains default command line arguments.
+                                      default: ~/.options/ame_api
+    -h, --help                       Show this message.
+
+#### Available Methods
+
+    job_abort
+    job_history
+    job_status
+    job_submit
+
+    server_kill
+    server_restart
+    server_status
 
 ## Contributing
 
