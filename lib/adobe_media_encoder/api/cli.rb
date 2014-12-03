@@ -57,7 +57,7 @@ module AdobeMediaEncoder
         @api = AdobeMediaEncoder::API::Client.new(args)
 
         ## LIST METHODS
-        methods = api.methods; methods -= Object.methods; methods.sort.each { |method| puts "#{method} #{api.method(method).parameters rescue ''}" }; exit
+        #methods = api.methods; methods -= Object.methods; methods.sort.each { |method| puts "#{method} #{api.method(method).parameters rescue ''}" }; exit
 
         # http.log_request_body = true
         # http.log_response_body = true
