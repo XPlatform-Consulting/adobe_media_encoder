@@ -1,4 +1,4 @@
-#!/usr/env ruby
+#!/usr/bin/env ruby
 lib_path = File.expand_path('../../lib', __FILE__)
 $:.unshift(lib_path) unless $:.include?(lib_path) or !File.exists?(lib_path)
 
