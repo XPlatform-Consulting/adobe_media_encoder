@@ -216,7 +216,9 @@ module AdobeMediaEncoder
       end
 
       def job_history(args = { })
-        http.get('history')
+        args = normalize_args(args, :symbolize_keys => true, :downcase_keys => true)
+        max_completed_jobs = args[:jobs] || args[:maxcompletedjobs]
+        http.get("history#{max_completed_jobs ? "?maxCompletedJobs=#{max_completed_jobs}" : ''}")
       end
 
       def job_status(args = { })
