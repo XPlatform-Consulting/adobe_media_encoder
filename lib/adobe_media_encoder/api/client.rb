@@ -19,7 +19,7 @@ class String
   def snake_case
     self.gsub(/::/, '/').gsub(/([A-Z]+)([A-Z][a-z])/,'\1_\2').gsub(/([a-z\d])([A-Z])/,'\1_\2').tr('-', '_').downcase
   end
-  alias snakeize :snake_case
+  alias :snakeize :snake_case
 
   def uncapitalize
     self[0, 1].downcase + self[1..-1]
@@ -52,7 +52,7 @@ module AdobeMediaEncoder
 
       class HTTPClient
 
-        DEFAULT_HTTP_HOST_NAME = 'localhost'
+        DEFAULT_HTTP_HOST_ADDRESS = 'localhost'
         DEFAULT_HTTP_HOST_PORT = 8080
 
         attr_accessor :logger, :log_request_body, :log_response_body, :log_pretty_print_body,
@@ -89,7 +89,7 @@ module AdobeMediaEncoder
         end
 
         def initialize_http(args = { })
-          @host = args[:host] ||= DEFAULT_HTTP_HOST_NAME
+          @host = args[:host] ||= DEFAULT_HTTP_HOST_ADDRESS
           @port = args[:port] ||= DEFAULT_HTTP_HOST_PORT
           @http = Net::HTTP.new(host, port)
         end
@@ -98,7 +98,6 @@ module AdobeMediaEncoder
         # @param [HTTPRequest|HTTPResponse] obj
         # @return [String]
         def format_body_for_log_output(obj)
-          #obj.body.inspect
           output = ''
           if obj.content_type == 'application/json'
             if @log_pretty_print_body
