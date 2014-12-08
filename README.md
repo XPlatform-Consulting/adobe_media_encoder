@@ -23,6 +23,18 @@ Or install it yourself as:
 ### AME API CLI [bin/ame_api](./bin/ame_api)
 An executable to interact with the Adobe Media Encoder API using a Command Line Interface
 
+
+
+###  Start AME service from the Mac Command Line
+
+cd '/Applications/Adobe Media Encoder CC 2014/Adobe Media Encoder CC 2014.app/Contents/ame_webservice_console.app/Contents/MacOS/';./ame_webservice_console 
+
+
+###  Configure the Web Server ports
+
+vi /Applications/Adobe\ Media\ Encoder\ CC\ 2014/Adobe\ Media\ Encoder\ CC\ 2014.app/Contents/ame_webservice_config.ini
+
+
 #### Usage
         --host-address HOSTADDRESS   The AME API server address.
                                       default: localhost
