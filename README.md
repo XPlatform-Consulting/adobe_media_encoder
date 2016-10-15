@@ -76,7 +76,7 @@ vi /Applications/Adobe\ Media\ Encoder\ CC\ 2015.3/Adobe\ Media\ Encoder\ CC\ 20
     server_status
     ame_api --host-address localhost --host-port 8080 --method-name server_status
 
-
+ 
 ## Contributing
 
 1. Fork it ( https://github.com/XPlatform-Consulting/adobe_media_encoder.git/fork )
