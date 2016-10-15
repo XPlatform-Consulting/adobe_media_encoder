@@ -27,12 +27,12 @@ An executable to interact with the Adobe Media Encoder API using a Command Line 
 
 ###  Start AME service from the Mac Command Line
 
-cd '/Applications/Adobe Media Encoder CC 2014/Adobe Media Encoder CC 2014.app/Contents/ame_webservice_console.app/Contents/MacOS/';./ame_webservice_console 
+cd '/Applications/Adobe Media Encoder CC 2015.3/Adobe Media Encoder CC 2015.app/Contents/ame_webservice_console.app/Contents/MacOS/';./ame_webservice_console 
 
 
 ###  Configure the Web Server ports
 
-vi /Applications/Adobe\ Media\ Encoder\ CC\ 2014/Adobe\ Media\ Encoder\ CC\ 2014.app/Contents/ame_webservice_config.ini
+vi /Applications/Adobe\ Media\ Encoder\ CC\ 2015.3/Adobe\ Media\ Encoder\ CC\ 2015.app/Contents/ame_webservice_config.ini
 
 
 #### Usage
