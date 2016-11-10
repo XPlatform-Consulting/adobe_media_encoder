@@ -32,7 +32,7 @@ cd '/Applications/Adobe Media Encoder CC 2015.3/Adobe Media Encoder CC 2015.app/
 
 ###  Configure the Web Server ports
 
-vi /Applications/Adobe\ Media\ Encoder\ CC\ 2015.3/Adobe\ Media\ Encoder\ CC\ 2015.app/Contents/ame_webservice_config.ini
+vi /Applications/Adobe\ Media\ Encoder\ CC\ 2015.3/Adobe\ Media\ Encoder\ CC\ 2015.app/Contents/Resources/ame_webservice_config.ini
  
 
 #### Usage
