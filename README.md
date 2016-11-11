@@ -1,4 +1,4 @@
-# AdobeMediaEncoder
+# Adobe Media Encoder (AME)
 
     A library for interacting with the Adobe Media Encoder API
 
