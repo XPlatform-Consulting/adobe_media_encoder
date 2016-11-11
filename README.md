@@ -23,7 +23,7 @@ Or install it yourself as:
 ### AME API CLI [bin/ame_api](./bin/ame_api)
 An executable to interact with the Adobe Media Encoder API using a Command Line Interface
 
-### ADOBE MEDIA 2015
+### ADOBE MEDIA ENCODER 2015
 
 ###  Start AME service from the Mac Command Line
 
@@ -35,7 +35,7 @@ cd '/Applications/Adobe Media Encoder CC 2015.3/Adobe Media Encoder CC 2015.app/
 vi /Applications/Adobe\ Media\ Encoder\ CC\ 2015.3/Adobe\ Media\ Encoder\ CC\ 2015.app/Contents/Resources/ame_webservice_config.ini
 
 
-### ADOBE MEDIA 2017
+### ADOBE MEDIA ENCODER 2017
 
 ###  Start AME service from the Mac Command Line
 
