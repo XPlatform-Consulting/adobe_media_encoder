@@ -1,4 +1,4 @@
-require "adobe_media_encoder/version"
+require 'adobe_media_encoder/version'
 
 module AdobeMediaEncoder
   # Your code goes here...

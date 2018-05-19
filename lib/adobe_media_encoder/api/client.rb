@@ -1,6 +1,7 @@
 require 'logger'
 require 'net/http'
 require 'net/https'
+require 'rexml/document'
 
 require 'adobe_media_encoder'
 
@@ -124,7 +125,7 @@ module AdobeMediaEncoder
         end
 
         def response_parsed
-          XMLHelper.parse_payload(response.body) rescue response
+          XMLHelper.parse_payload(response.body) #rescue response
         end
 
         def build_uri(path = '', query = { })
