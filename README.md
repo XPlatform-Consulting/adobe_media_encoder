@@ -1,4 +1,4 @@
-# AdobeMediaEncoder
+# Adobe Media Encoder (AME)
 
     A library for interacting with the Adobe Media Encoder API
 
@@ -22,6 +22,30 @@ Or install it yourself as:
 
 ### AME API CLI [bin/ame_api](./bin/ame_api)
 An executable to interact with the Adobe Media Encoder API using a Command Line Interface
+
+### ADOBE MEDIA ENCODER 2015
+
+###  Start AME service from the Mac Command Line
+
+cd '/Applications/Adobe Media Encoder CC 2015.3/Adobe Media Encoder CC 2015.app/Contents/ame_webservice_console.app/Contents/MacOS/';./ame_webservice_console 
+
+
+###  Configure the Web Server ports
+
+vi /Applications/Adobe\ Media\ Encoder\ CC\ 2015.3/Adobe\ Media\ Encoder\ CC\ 2015.app/Contents/Resources/ame_webservice_config.ini
+
+
+### ADOBE MEDIA ENCODER 2017
+
+###  Start AME service from the Mac Command Line
+
+cd '/Applications/Adobe Media Encoder CC 2017/Adobe Media Encoder CC 2017.app/Contents/ame_webservice_console.app/Contents/MacOS/';./ame_webservice_console 
+
+
+###  Configure the Web Server ports
+
+vi /Applications/Adobe\ Media\ Encoder\ CC\ 2017/Adobe\ Media\ Encoder\ CC\ 2017.app/Contents/Resources/ame_webservice_config.ini
+ 
 
 #### Usage
         --host-address HOSTADDRESS   The AME API server address.
@@ -64,7 +88,7 @@ An executable to interact with the Adobe Media Encoder API using a Command Line 
     server_status
     ame_api --host-address localhost --host-port 8080 --method-name server_status
 
-
+ 
 ## Contributing
 
 1. Fork it ( https://github.com/XPlatform-Consulting/adobe_media_encoder.git/fork )
