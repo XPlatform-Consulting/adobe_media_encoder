@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['john.whitson@gmail.com']
   spec.summary       = %q{A library for interacting with the Adobe Media Encoder API}
   # spec.description   = %q{}
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/XPlatform-Consulting/adobe_media_encoder'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
